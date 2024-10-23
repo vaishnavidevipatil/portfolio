@@ -10,7 +10,6 @@ const Skills = () => {
         <li>ReactJS, HTML, CSS, JavaScript</li>
         <li>MySQL, SQL, MongoDB</li>
         <li>API Development, JWT Authentication</li>
-        <li>Agile Methodologies, Software Testing</li>
         <li>Data Visualization, Stock Market Analysis</li>
       </ul>
     </section>

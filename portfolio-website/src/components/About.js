@@ -12,6 +12,7 @@ const About = () => {
         <a href="https://www.linkedin.com/in/vaishnavi-devi-patil-711176222" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/vaishnavidevipatil" target="_blank" rel="noopener noreferrer">GitHub</a>
         {/* Add HackerRank link if available */}
+        <a href='https://leetcode.com/u/VAISHNAVIDP/' target="_blank" rel='noopener noreferrer'>LEETCODE</a>
       </div>
     </section>
   );

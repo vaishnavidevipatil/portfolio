@@ -1,9 +1,11 @@
 import React from 'react';
 // import './Skills.css';
+import icon from '../img/project-management.png';
 
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
+      <img src={icon} alt="skill icon" className="skill-icon"></img>
       <h2>Skills</h2>
       <ul>
         <li>Python, FastAPI, Flask</li>

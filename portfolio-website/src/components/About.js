@@ -1,19 +1,29 @@
 import React from 'react';
-// import './App.css';
+import '../styles/about.css'
 
 const About = () => {
   return (
     <section id="about" className="about-section">
       <h2>About Me</h2>
-      <p>
-        I'm an enthusiastic and innovative Software Engineer with experience in full-stack development, agile methodologies, and software testing. I have a strong background in Python, ReactJS, FastAPI, and SQL, and I'm passionate about creating scalable, efficient, and maintainable software solutions.
-      </p>
-      <div className="about-links">
-        <a href="https://www.linkedin.com/in/vaishnavi-devi-patil-711176222" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/vaishnavidevipatil" target="_blank" rel="noopener noreferrer">GitHub</a>
-        {/* Add HackerRank link if available */}
-        <a href='https://leetcode.com/u/VAISHNAVIDP/' target="_blank" rel='noopener noreferrer'>LEETCODE</a>
-      </div>
+       {/* <h2>ABOUT ME</h2> */}
+                <div className="about-container">
+                <div className="about-photo"></div>
+                <div className="about-text">
+                  <p><i>
+                    Proven Full Stack Developer adept in responsive design, excelled in integrating APIs and enhancing data management. Demonstrated strong problem-solving and team collaboration skills, achieving improvements in functionality and security with a commitment to excellence and innovation.
+                    </i></p>
+          
+           <div className="about-links">
+              <a href="https://www.linkedin.com/in/vaishnavi-devi-patil-711176222" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/vaishnavidevipatil" target="_blank" rel="noopener noreferrer">GitHub</a>
+              {/* Add HackerRank link if available */}
+              <a href='https://leetcode.com/u/VAISHNAVIDP/' target="_blank" rel='noopener noreferrer'>LEETCODE</a>
+            </div>
+                
+                </div>
+              </div>
+      
+    
     </section>
   );
 };

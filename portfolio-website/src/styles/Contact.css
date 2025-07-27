@@ -22,6 +22,7 @@
   margin: 40px 0;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #contact {
@@ -32,6 +33,7 @@
   margin-right: 35%;
   /* margin-: 10%; */
   background-color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .section-header {
@@ -40,10 +42,15 @@
   align-items: center;
   /* margin-left: 20%; */
   color: #333;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   /* background-color: black; */
 }
 
+.contact-icon{
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -52,17 +59,18 @@
   max-width: 900px;
   margin: 0 auto;
 }
-
-/* Form Styling */
+/* 
+/* Form Styling 
 #contact-form {
-  flex: 1;
+  flex: 2;
   height: 455px;
-  max-width: 470px;
+  max-width: 770px;
   background: #e2e2ed;
   padding: 20px;
   margin-right: 10px;
   margin-bottom: 5%;
-  /* margin-bottom: 18%; */
+  margin-left: 10px;
+  display:flexbox;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -99,6 +107,74 @@
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+/* Form Container */
+#contact-form {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  background: #f9f9fc;
+  padding: 30px 25px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+#contact-form:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.form-control {
+  width: 90%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Textarea Style */
+textarea.form-control {
+  resize: vertical;
+  width: 90%;
+  min-height: 120px;
+  align-items: center;
+}
+
+/* Send Button (MUI or custom) */
+.send-button, .MuiButton-root {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Optional wrapper for spacing */
+.form-group {
+  margin-bottom: 12px;
+}
+
+/* Align icons/text (if needed) */
+.alt-send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-paper-plane {
@@ -109,6 +185,7 @@
 .direct-contact-container {
   flex: 1;
   max-width: 400px;
+  margin-top: 3%;
 }
 
 .contact-list {

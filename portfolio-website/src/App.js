@@ -8,20 +8,19 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import img from './img/Passport.jpg';
 // import '../styles/about.css';
-
+import Education from './components/Education';
 
 function App() {
   return (
     <div className="App">
       <Header />      
-      
-
       <main>
         {/* <Header />       */}
         <About />
         <Projects />
         <Skills />
         <Contact />
+        <Education />
       </main>
     </div>
   );

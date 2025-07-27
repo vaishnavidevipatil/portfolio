@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import axios from 'axios'
 // import React from "react";
 import "../styles/Contact.css";
+// import contact-icon from "../img/contact.png";
+import icon from '../img/contact.png';
 
 // import "../styles/Contact.css" // Assuming you have corresponding styles
 import { GitHub, LinkedIn, Instagram, Email, Phone, LocationOn, Send } from "@mui/icons-material";
@@ -38,7 +40,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h1 className="section-header">Get in touch</h1>
+      
+      <h1 className="section-header"><img src={icon} className="contact-icon"></img>Get in touch</h1>
       <div className="contact-wrapper">
 
         {/* Left contact page */}
@@ -99,8 +102,9 @@ const Contact = () => {
             </li>
           </ul>
 
+          <h3>Follow Me</h3>
           <hr />
-
+          
           <ul className="social-media-list" style={{ display: "flex", justifyContent: "center", gap: "15px" }}>
             
             {/* GitHub Icon */}

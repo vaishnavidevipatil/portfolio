@@ -9,9 +9,9 @@ const About = () => {
                 <div className="about-container">
                 <div className="about-photo"></div>
                 <div className="about-text">
-                  <p><i>
+                  <p><b>
                     Proven Full Stack Developer adept in responsive design, excelled in integrating APIs and enhancing data management. Demonstrated strong problem-solving and team collaboration skills, achieving improvements in functionality and security with a commitment to excellence and innovation.
-                    </i></p>
+                    </b></p>
           
            <div className="about-links">
               <a href="https://www.linkedin.com/in/vaishnavi-devi-patil-711176222" target="_blank" rel="noopener noreferrer">LinkedIn</a>

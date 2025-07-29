@@ -18,9 +18,9 @@ function App() {
         {/* <Header />       */}
         <About />
         <Projects />
+        <Education />
         <Skills />
         <Contact />
-        <Education />
       </main>
     </div>
   );

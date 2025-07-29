@@ -18,6 +18,7 @@ const About = () => {
               <a href="https://github.com/vaishnavidevipatil" target="_blank" rel="noopener noreferrer">GitHub</a>
               {/* Add HackerRank link if available */}
               <a href='https://leetcode.com/u/VAISHNAVIDP/' target="_blank" rel='noopener noreferrer'>LEETCODE</a>
+                <a href='https://www.hackerrank.com/profile/vaishnavidevip17' target="_blank" rel='noopener noreferrer'>HackerRank</a>
             </div>
                 
                 </div>

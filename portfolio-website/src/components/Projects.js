@@ -1,10 +1,14 @@
 import React from 'react';
 // import './Projects.css';
+import project from '../img/blueprint.png';
 
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2>Projects</h2>
+        <img src={project} alt="project icon" className="project-icon" />
+        <h2>Projects</h2>
+
+
       <div className="project-card">
         <h3>Stock Market Visualization Dashboard</h3>
         <p>

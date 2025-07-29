@@ -4,9 +4,20 @@
   color: #000;
 }
 
+.resume-icon{
+  height: 40px;
+  width: 40px;
+  margin-bottom: -8px;
+  margin-left: 15px;
+}
 .section-title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.edu-icon{
+  height: 30px;
+  width: 30px;
 }
 
 .education-title {
@@ -17,6 +28,7 @@
   color: #000;
   font-weight: 600;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .timeline {
@@ -24,11 +36,15 @@
   margin-left: 1rem;
   padding-left: 2rem;
   position: relative;
+  
 }
 
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
+  color: #161212;
+  font-weight: 300;
+
 }
 
 .timeline-dot {
@@ -36,9 +52,9 @@
   height: 15px;
   background-color: #facc15;
   border-radius: 50%;
-  position: absolute;
-  left: -30px;
-  top: 0;
+  position:relative;
+  left: -42px;
+  top: 20;
 }
 
 .institution {
@@ -48,15 +64,23 @@
   display: inline-block;
   padding: 0.2rem 0.5rem;
   margin-bottom: 0.3rem;
+  color: #000;
 }
 
 .years {
   display: block;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  color: #000;
 }
 
+.timeline-content{
+  margin-top:-30px;
+  /* margin-left: 140x; */
+}
 .description {
+  
   color: #ccc;
   font-size: 0.95rem;
+  color: #000;
 }

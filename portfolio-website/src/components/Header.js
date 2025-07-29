@@ -10,9 +10,10 @@ const Header = () => {
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+           <a href="#Education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
-          <a href="#Education">Education</a>
+         
         </nav>
       </div>
     </header>

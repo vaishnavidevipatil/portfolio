@@ -3,79 +3,14 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #f4f4f9; */
+    background-color: #3498db;
   color: #333;
   scroll-behavior: smooth;
+
 }
 
-/* .about-photo {
-  flex: 1;
-  max-width: 300px;
-  height: 300px;
-  background-image: url('./img/Passport.jpg');
-  background-size: cover;
-  margin-left: 10%;
-  position: relative;
-  background-position: center;
-  border-radius: 50%;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-} */
-
-/* h2{
-  font: 1em sans-serif;
-  display: flex;
-  margin-left: 100%;
-  margin-top: auto;
-} */
-
-.about-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
-}
-
-.about-photo {
-  flex: 1;
-  max-width: 300px;
-  height: 300px;
-  background-image: url('./img/profile.png');
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-right: 350px;
-}
-
-.about-text {
-  flex: 2;
-  max-width: 600px;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  margin: 0;
-  text-align: justify;
-}
-
-a {
-  text-decoration: none;
-  color: #3498db;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #2980b9;
-}
 
 /* Utility Classes */
 .container {
@@ -222,84 +157,7 @@ h2::after {
    /* margin-top: -10px; */
   margin-top: 50px;
 }
-/* 
-.projects-section {
-  display: flex;
-  padding: 60px 20px;
-  background-color: #ffffff;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in-out;
-}
 
-.project-card {
-  display: flex;
-  width:40%;
-  height:350px;
-  background-color: #e2e2ed;
-  padding: 25px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.project-card h3 {
-  margin-top: 0;
-  color: #2980b9;
-  font-size: 1.8rem;
-}
-
-.project-card p {
-  line-height: 1.6;
-  font-size: 1.1rem;
-} */
-
-/* Skills Section Styles */
-/* .skills-section {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  margin: 40px 0;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.skill-icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom:-90px;
-  /* margin-bottom: 40px; 
-  margin-left: 600px;
-}
-.skills-section ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.skills-section ul li {
-  padding: 12px 20px;
-  background-color: #3498db;
-  color: white;
-  border-radius: 8px;
-  font-size: 1rem;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skills-section ul li:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-} */
 
 /* Contact Section Styles */
 .contact-section {
@@ -352,6 +210,116 @@ h2::after {
   .about-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .about-photo {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  /* Header adjustments */
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .header-content nav a {
+    margin: 0 10px;
+    font-size: 0.95rem;
+  }
+
+  /* Section title */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 28px;
+  }
+
+  /* About section spacing */
+  .about-section {
+    padding: 40px 16px;
+    margin: 20px 0;
+  }
+
+  /* Contact section spacing */
+  .contact-section {
+    padding: 40px 16px;
+    margin: 20px 0;
+  }
+
+  /* Icon alignment */
+  .project-icon {
+    margin-left: 0;
+    display: block;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  /* Utility */
+  .container {
+    padding: 0 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* Header compact */
+  .header {
+    padding: 14px 0;
+  }
+
+  .header-content h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .header-content p {
+    font-size: 0.95rem;
+  }
+
+  .header-content nav a {
+    margin: 6px 8px;
+    display: inline-block;
+  }
+
+  /* Titles and text */
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-section p,
+  .contact-section p {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  .about-section,
+  .contact-section {
+    padding: 28px 14px;
+    margin: 16px 0;
+    border-radius: 8px;
+  }
+
+  /* Icon */
+  .project-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+@media (max-width: 348px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    max-width: 530px;
+    background-color: #3498db;
   }
 
   .about-photo {

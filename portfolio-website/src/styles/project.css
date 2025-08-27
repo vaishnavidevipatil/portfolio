@@ -1,4 +1,4 @@
-/* Container holding all project cards */
+/* General Styles */
 .projects-section {
   display: flex;
   flex-wrap: wrap;
@@ -12,30 +12,44 @@
   gap: 2em;
   height: auto;
   margin-bottom: 60px;
+
+}
+
+.project-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 20px;
+}
+
+.project-header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  position: center;
+  /* margin: 0 0 40px 0; */
 }
 
 .project-icon {
-  position: absolute;
   width: 50px;
-  height:40px;
-  margin-bottom: 90px;
-  margin-right: 600px;
+  height: 40px;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
+.project-header h2 {
   color: #34495e;
   font-size: 2.5rem;
-  margin-right: 50px; 
-  position: relative;
+  margin: 0;
+  line-height: 1;
 }
 
 /* Each project card */
 .project-card {
   position: relative;
-  width: 350px;
-  height: 400px;
+  width: 300px;
+  height: 450px;
   border-radius: 16px;
   overflow: hidden;
   padding: 1em;
@@ -43,34 +57,61 @@ h2 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
-  margin-top:40px;
+  margin-top: 100px;
+  transform-style: preserve-3d;
 }
 
-/* Subtle pop effect */
+/* Card Hover Animation */
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  animation: floatCard 3s ease-in-out infinite;
 }
 
-/* Pop-circle like glow effect */
+/* Pop-circle glow effect */
 .project-card::before {
   content: '';
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #6c63ff; /* main color */
+  width: 80px;
+  height: 80px;
+  background-color: #6c63ff;
   bottom: -10%;
   right: -10%;
   border-radius: 50%;
-  filter: blur(20px);
+  filter: blur(25px);
   opacity: 0;
   transition: 0.6s ease;
 }
 
 .project-card:hover::before {
   opacity: 0.8;
-  bottom: 10%;
-  right: 10%;
+  bottom: 5%;
+  right: 5%;
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+/* Floating inner content effect */
+.project-card:hover * {
+  transform: translateZ(20px);
+  transition: transform 0.4s ease;
+}
+
+/* Card Floating Keyframes */
+@keyframes floatCard {
+  0%, 100% { transform: translateY(-10px) scale(1.05); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
+
+/* Pulse Glow Keyframes */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+/* Fade In for section load */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Image */

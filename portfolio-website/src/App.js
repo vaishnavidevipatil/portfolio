@@ -6,9 +6,10 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import img from './img/Passport.jpg';
-// import '../styles/about.css';
+// import img from './img/Passport.jpg'..;
 import Education from './components/Education';
+
+
 
 function App() {
   return (

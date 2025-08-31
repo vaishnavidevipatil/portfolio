@@ -14,9 +14,9 @@ import Education from './components/Education';
 function App() {
   return (
     <div className="App">
+      {/* Navbar ,,...........header */}
       <Header />      
       <main>
-        {/* <Header />       */}
         <About />
         <Projects />
         <Education />

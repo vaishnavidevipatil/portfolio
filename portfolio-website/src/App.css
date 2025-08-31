@@ -4,8 +4,8 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* background-color: #f4f4f9; */
-    background-color: #3498db;
+  background-color: #f4f4f9;
+    /* background-color: #3699db; */
   color: #333;
   scroll-behavior: smooth;
 

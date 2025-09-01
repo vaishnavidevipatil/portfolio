@@ -48,7 +48,7 @@
 /* Each project card */
 .project-card {
   position: relative;
-  width: 360px;
+  width: 330px;
   height: 600px;
   border-radius: 16px;
   overflow: hidden; /* default: hides overflow */

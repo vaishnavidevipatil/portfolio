@@ -12,7 +12,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
        <div className="project-header">
           <img src={project} className="project-icon" alt="icon" />
-          <h2 style={{ textAlign: 'right' }}>Projects</h2>
+          <h2>Projects</h2>
         </div>
 
          <div className="project-container">
@@ -27,7 +27,6 @@ const Projects = () => {
             The system handles diverse queries and delivers accurate, context-aware answers 
             with minimal latency.
           </p>
-
           <p><b><u>Features:</u></b> Fast response, conversational memory, and LLM integration.</p>
           <p><b>Skills:</b> Python, GenAI, LangChain, LLMs</p>
           <a href="https://github.com/vaishnavidevipatil/langchain" target="_blank" rel="noopener noreferrer">
@@ -61,15 +60,8 @@ const Projects = () => {
             <p>
               Created a full-stack Todo application with React for web and React Native for mobile, 
               using Redux for state management. Supports task creation, editing, and tracking in real time.
-              <br></br>
-            <b><u>Features:</u></b>
-              <ol type='i'>
-                <li>Real-time updates with WebSocket and Task creation and deletion</li>
-                <li>Responsive design for mobile and web</li>
-              </ol>
+            </p>
             <p><b>Skills:</b> React, React Native, Redux, JavaScript</p>
-             
-             </p>
             <a href="https://github.com/vaishnavidevipatil/apnaweb/tree/local" target="_blank" rel="noopener noreferrer">
               View Project
             </a>
@@ -85,15 +77,13 @@ const Projects = () => {
               Built a weather forecasting app with secure login using JWT authentication in Flask. 
               Passwords encrypted with bcrypt ensure strong user data protection and API security.
             </p>
-            <p><b>Features:</b>Secure login, encrypted passwords, and real-time weather data.The data API fetches information from OpenWeatherMap.</p>
-          
-            <p><b>Skills:</b> Flask, JWT, Bcrypt, REST APIs, Python
-              </p>
+            <p><b>Skills:</b> Flask, JWT, Bcrypt, REST APIs, Python</p>
             <a href="https://github.com/vaishnavidevipatil/login_app" target="_blank" rel="noopener noreferrer">
               View Project
             </a>
           </div>
         </div>
+
       </div>
     </section>
   );

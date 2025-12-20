@@ -9,7 +9,7 @@ const skills = [
   "MySQL", "SQL", "MongoDB",
   "API Development", "JWT Authentication",
   "Data Visualization", "Stock Market Analysis",
-  "Docker", "Kubernetes", "AWS",
+  "Docker", "JSON" , "AWS", "JAVA",
   "Git & GitHub", "Linux", "CI/CD"
 ];
 
@@ -25,7 +25,7 @@ const Skills = () => {
           initial={{ x: "100%" }}
           animate={{ x: "-100%" }}
           transition={{
-            duration: 46,   // speed of scroll
+            duration: 29,   // speed of scroll
             repeat: Infinity,
           
             ease: "linear"

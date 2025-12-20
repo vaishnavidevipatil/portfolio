@@ -8,3 +8,4 @@ npm install dotenv
 
 npm install express cors nodemailer body-parser
 
+npm i react-pdf

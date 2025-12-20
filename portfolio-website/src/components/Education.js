@@ -18,7 +18,7 @@ const educationData = [
   {
     institution: "MKET LK English Medium School",
     years: "2017 — 2018",
-    description: "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.",
+    description: "I have studied my higher education in Science School where I was good Physics and Boilogy. But also Maths was my favourite subject I was intersted in playing games in criket and football. ",
   },
 ];
 

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   background-color: #ffffff;
   margin: 20px 0;
   border-radius: 10px;
@@ -20,7 +20,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .project-header {
@@ -43,16 +43,20 @@
   font-size: 2.5rem;
   margin: 0;
   line-height: 1;
+  text-align: right;
+  margin-right: 70%;
 }
 
 /* Each project card */
 .project-card {
   position: relative;
-  width: 330px;
-  height: 600px;
+  width: 300px;
+  height: 700px;
+  margin-bottom: -40px;
   border-radius: 16px;
+  gap: 40px;
   overflow: hidden; /* default: hides overflow */
-  padding: 1em;
+  padding: 2em;
   background-color: #c1bfe7;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -136,7 +140,7 @@
   animation: floatCard 3s ease-in-out infinite;
 }
 .todo-img{
-  height: 100%;
+  height: 80%;
   width: 40px;
 }
 

@@ -215,8 +215,9 @@ a:hover {
 }
 
 .label:has(.input:checked) {
-  width: 57px;
+  width: 117px;
   animation: installed 0.4s ease 3.5s forwards;
+  /* content: none; */
 }
 
 .label:has(.input:checked)::before {

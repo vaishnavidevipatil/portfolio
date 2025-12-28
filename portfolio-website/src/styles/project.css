@@ -53,6 +53,8 @@
   width: 400px;
   height: 650px;
   margin-bottom: -30px;
+  margin-right: 20px;
+  margin-bottom: 1%;
   border-radius: 16px;
   gap: 40px;
   overflow: hidden; /* default: hides overflow */

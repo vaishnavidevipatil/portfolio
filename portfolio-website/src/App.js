@@ -9,8 +9,6 @@ import Contact from './components/Contact';
 // import img from './img/Passport.jpg'..;
 import Education from './components/Education';
 
-
-
 function App() {
   return (
     <div className="App">

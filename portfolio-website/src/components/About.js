@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/about.css'
-// import photo  from '../img/photo.jpg';
-import { Document } from 'react-pdf';
+import resume from "../assests/VaishnaviDeviPatil_Resume.pdf";
+
 
 const About = () => {
   return (
@@ -26,12 +26,25 @@ const About = () => {
                     Download Resume
                   </a> */}
 
-                  <div class="resume-container">
-                    <label class="label">
-                      <input type="checkbox" class="input" />
-                      <span class="circle"
+                  <div className="resume-container">
+                    <label 
+                      className="label" 
+                      onClick={(e) => {
+                        // Trigger download when clicking anywhere on the label
+                        e.preventDefault();
+                        const link = document.createElement('a');
+                        link.href = resume;
+                        link.download = 'VaishnaviDeviPatil_Resume.pdf';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                      }}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      <input type="checkbox" className="input" readOnly />
+                      <span className="circle"
                         ><svg
-                          class="icon"
+                          className="icon"
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -39,19 +52,19 @@ const About = () => {
                         >
                           <path
                             stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="1.5"
                             d="M12 19V5m0 14-4-4m4 4 4-4"
                           ></path>
                         </svg>
-                        <div class="square"></div>
+                    <div className="square"></div>
                       </span>
-                      {/* <p class="title">Resume</p>
-                      <p class="title">Open</p> */}
-                      <a className='resume' style={{position:"relative", left:"10px" }} href="/VaishnaviDeviPatil_Resume.pdf" download>
+                      {/* <p className="title">Resume</p>
+                      <p className="title">Open</p> */}
+                      <span className='resume' style={{position:"relative", left:"10px" }}>
                           Resume
-                      </a>
+                      </span>
                     </label>
                   </div>
               </div>

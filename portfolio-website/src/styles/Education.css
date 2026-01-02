@@ -79,8 +79,8 @@
   /* margin-left: 140x; */
 }
 .description {
-  
-  color: #ccc;
+  font-style: italic;
+  font-weight: 600;
   font-size: 0.95rem;
-  color: #000;
+  color: grey;
 }

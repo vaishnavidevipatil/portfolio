@@ -13,7 +13,7 @@ const educationData = [
   {
     institution: "Sri Vyshnavi Chetan PU College",
     years: "2018 — 2021",
-    description: "PCMB",
+    description: "PCMB and I have studied my pre-university in Science where I was good Physics and Maths. I was very interested in solving problems and participating in competitions.",
   },
   {
     institution: "MKET LK English Medium School",
@@ -41,7 +41,7 @@ const Education = () => {
             <div className="timeline-content">
               <h4 className="institution">{edu.institution}</h4>
               <span className="years">{edu.years}</span>
-              <p className="description">{edu.description}</p>
+              <p className="description"><b>{edu.description}</b></p>
             </div>
           </div>
         ))}

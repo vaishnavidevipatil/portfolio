@@ -58,7 +58,7 @@ const About = () => {
                             d="M12 19V5m0 14-4-4m4 4 4-4"
                           ></path>
                         </svg>
-                        <div className="square"></div>
+                    <div className="square"></div>
                       </span>
                       {/* <p className="title">Resume</p>
                       <p className="title">Open</p> */}

@@ -54,6 +54,10 @@ const Contact = () => {
         <form id="contact-form" className="form-horizontal" role="form" onSubmit={handleSubmit}>
           <div className="form-group">
             <div className="col-sm-12">
+              <div className="icon-container">
+                 <p><b>FEEDBACK</b></p>
+                </div>
+              {/* <p><b>FEEDBACK</b></p> */}
               <input
                 type="text"
                 className="form-control"

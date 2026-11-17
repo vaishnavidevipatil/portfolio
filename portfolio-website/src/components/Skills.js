@@ -38,6 +38,35 @@ const Skills = () => {
           ))}
         </motion.ul>
       </div>
+
+      
+                 <div className="about-highlights">
+          <div className="highlight-card">
+            <h3>Hardware</h3>
+            <p>System Testing & RF Validation</p>
+          </div>
+
+          <div className="highlight-card">
+            <h3>Software</h3>
+            <p>Full Stack Development & REST APIs</p>
+          </div>
+
+          <div className="highlight-card">
+            <h3>Approach</h3>
+            <p>Problem Solving & Continuous Learning</p>
+          </div>
+        </div>
+
+        <h3 className="skills-heading">Technical Skills</h3>
+
+        <div className="skills-container">
+          {skills.map((skill) => (
+            <span className="skill-tag" key={skill}>
+              {skill}
+            </span>
+          ))}
+        </div>
+       
     </section>
   );
 };

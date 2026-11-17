@@ -1,34 +1,42 @@
 
-/* Container Styles in about section */
+.about-section {
+  padding: 80px 8%;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: "Poppins", sans-serif;
+}
+
 .about-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 40px 20px;
-  /* background-color: #ffffff; */
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
-background-color:  #ffffff;
+  gap: 48px;
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .about-text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   flex: 2;
-  max-width: 600px;
+  height: auto;
+  max-width: 570px;
   font-size: 50px;
-
+  margin-right: 40px;
+  margin-bottom: 1%;
 }
 
 .about-text p {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.95;
   margin: 0;
-  text-align: justify;
-
+  text-align: left;
 }
 
 a {
@@ -37,24 +45,28 @@ a {
   transition: color 0.3s ease;
 }
 
+h2 {
+   color: #3498db;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
 a:hover {
   color: #2980b9;
 }
-
-
 .about-photo {
-  flex: 1;
-  max-width: 400px;
-  height: 450px;
-  background-image: url('../img/profile.png');
+  flex: 0 0 280px;
+  width: 280px;
+  height: 350px;
+  background-image: url('C:\\Users\\vaish\\Coding_26\\portfolio\\portfolio-website\\src\\img\\professional_pic.png');
   background-size: cover;
   background-position: center;
-  /* border-radius: 100%; */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-right: 350px;
+  margin-right: 150px;
   margin-bottom: 1%;
   font-weight: 300;
-  /* border-radius: 70%; */
+  /* border-radius: 50%; */
 }
 
 @media (max-width: 380px) {
@@ -65,15 +77,18 @@ a:hover {
     text-align: center;      /* Center align text */
     order: -1;               /* If inside flex container – move to top */
   } 
+
+
+
+  .about-photo {
+    display: none;           /* Hide the photo on small screens */
+  }
 }
 
 
 @media (max-width: 768px) {
-  .about-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  .about-container {
+    gap: 28px;
   }
 
   .about-links a {
@@ -81,6 +96,10 @@ a:hover {
     text-align: center;
     padding: 14px 0;
     font-size: 1rem;
+  }
+
+  .about-photo {
+    display: none;           /* Hide the photo on small screens */
   }
 }
 
@@ -97,7 +116,6 @@ a:hover {
 
 .label {
   background-color: transparent;
-
   border: 2px solid rgb(91, 91, 240);
   display: flex;
   align-items: center;
@@ -107,11 +125,11 @@ a:hover {
   transition: all 0.4s ease;
   padding: 5px;
   position: relative;
-  left:60px;
+  left:10px;
 }
 
 .a{
-    content: "";
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -126,6 +144,17 @@ a:hover {
   margin: auto;
   opacity: 0;
   visibility: hidden;
+}
+
+.resume-container {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.resume {
+  position: relative;
+  left: 10px;
 }
 
 .label::before {
@@ -197,10 +226,11 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 10%;
   transform: translate(-50%, -50%);
   transition: all 0.4s ease;
+
 }
 
 .label .circle::before {
@@ -215,8 +245,9 @@ a:hover {
 }
 
 .label:has(.input:checked) {
-  width: 57px;
+  width: 117px;
   animation: installed 0.4s ease 3.5s forwards;
+  /* content: none; */
 }
 
 .label:has(.input:checked)::before {

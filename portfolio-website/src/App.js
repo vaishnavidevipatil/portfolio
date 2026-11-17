@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 // import img from './img/Passport.jpg'..;
 import Education from './components/Education';
-
+import Experience from './components/Experience';
 
 
 function App() {
@@ -18,10 +18,13 @@ function App() {
       <Header />      
       <main>
         <About />
+           <Experience />
         <Projects />
         <Education />
         <Skills />
         <Contact />
+   
+
       </main>
     </div>
   );

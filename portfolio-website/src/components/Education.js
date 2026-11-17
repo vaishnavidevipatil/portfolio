@@ -13,12 +13,12 @@ const educationData = [
   {
     institution: "Sri Vyshnavi Chetan PU College",
     years: "2018 — 2021",
-    description: "PCMB",
+    description: "PCMB and I have studied my pre-university in Science where I was good Physics and Maths. I was very interested in solving problems and participating in competitions.",
   },
   {
     institution: "MKET LK English Medium School",
     years: "2017 — 2018",
-    description: "I have studied my higher education in Science School where I was good Physics and Boilogy. But also Maths was my favourite subject I was intersted in playing games in criket and football. ",
+    description: "I completed my higher secondary education in the Science stream, where I developed a strong interest in Physics and Biology. Mathematics was also one of my favourite subjects. Beyond academics, I enjoyed playing outdoor sports, especially cricket and football, which helped me develop teamwork and sportsmanship.",
   },
 ];
 
@@ -41,7 +41,7 @@ const Education = () => {
             <div className="timeline-content">
               <h4 className="institution">{edu.institution}</h4>
               <span className="years">{edu.years}</span>
-              <p className="description">{edu.description}</p>
+              <p className="description"><b>{edu.description}</b></p>
             </div>
           </div>
         ))}

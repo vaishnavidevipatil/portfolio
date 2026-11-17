@@ -1,0 +1,141 @@
+
+.experience-section {
+  padding: 80px 8%;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: "Poppins", sans-serif;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.experience-label {
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.experience-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 14px 0;
+}
+
+.experience-title span {
+  color: #38bdf8;
+}
+
+.experience-intro {
+  color: #aab7cc;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.timeline-marker {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  color: #7dd3fc;
+  background: #13283d;
+}
+
+.experience-content {
+  padding: 24px;
+  background: #111c30;
+  border: 1px solid #293950;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.experience-content:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.experience-top h3 {
+  margin-top: 0;
+  color: #f8fafc;
+}
+
+.experience-top h4 {
+  color: #38bdf8;
+}
+
+.experience-duration {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+}
+
+.experience-type {
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+.experience-points {
+  padding-left: 20px;
+  color: #b8c2d6;
+  line-height: 1.8;
+}
+
+.experience-points li {
+  margin-bottom: 10px;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-tags span {
+  padding: 7px 12px;
+  border-radius: 8px;
+  color: #bae6fd;
+  background: #172d44;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 50px 5%;
+  }
+
+  .experience-card {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .timeline-marker {
+    width: 34px;
+    height: 34px;
+  }
+
+  .experience-content {
+    padding: 16px;
+  }
+}

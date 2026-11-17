@@ -18,7 +18,9 @@
 .contact-section {
   width: 100%;
   padding: 60px 20px;
-  background-color: #ffffff;
+  /* background-color: #9c1212; */
+  background-color: #1e293b;
+  color: #fff;
   margin: 40px 0;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -32,7 +34,7 @@
   text-align: center;
   margin-right: 35%;
   /* margin-: 10%; */
-  background-color: #ffffff;
+  background-color: #1e293b;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -41,8 +43,9 @@
   margin-bottom: 20px;
   align-items: center;
   /* margin-left: 20%; */
-  color: #333;
-  background-color: rgb(255, 255, 255);
+  color: #ffff;
+  background-color: transparent;
+  /* background-color: rgb(255, 255, 255); */
   /* background-color: black; */
 }
 
@@ -59,55 +62,6 @@
   max-width: 900px;
   margin: 0 auto;
 }
-/* 
-/* Form Styling 
-#contact-form {
-  flex: 2;
-  height: 455px;
-  max-width: 770px;
-  background: #e2e2ed;
-  padding: 20px;
-  margin-right: 10px;
-  margin-bottom: 5%;
-  margin-left: 10px;
-  display:flexbox;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-control {
-  width: 100%;
-  padding: 10px;
-  margin-top: 2% ;
-  margin-bottom:1px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.send-button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.send-button:hover {
-  background-color: #0056b3;
-}
-
-.alt-send-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 /* Form Container */
 #contact-form {

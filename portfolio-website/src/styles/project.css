@@ -4,13 +4,17 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 80px 20px;
-  background-color: #ffffff;
-  margin: 20px 0;
+  background: #111c30;
+  border: 1px solid #293950;
+  /* background-color: #f0efff; */
+  margin: 30px 0;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-in-out;
   gap: 1em;
   height: auto;
+  gap: 2em;
+  height: 1100px;
   margin-bottom: 60px;
 
 }
@@ -20,6 +24,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
+  flex: 1 1 100%;
+  flex-wrap: nowrap;
+  min-width: 0;
+  overflow-x: auto;
+  gap: 2em;
   margin-top: 10px;
 }
 
@@ -29,7 +38,6 @@
   justify-content: center;
   gap: 12px;
   flex-wrap: nowrap;
-  position: center;
   /* margin: 0 0 40px 0; */
 }
 
@@ -50,6 +58,7 @@
 /* Each project card */
 .project-card {
   position: relative;
+  flex: 0 0 300px;
   width: 300px;
   height: 715px;
   margin-bottom: -30px;

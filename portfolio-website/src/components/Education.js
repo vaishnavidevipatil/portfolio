@@ -18,7 +18,7 @@ const educationData = [
   {
     institution: "MKET LK English Medium School",
     years: "2017 — 2018",
-    description: "I have studied my higher education in Science School where I was good Physics and Boilogy. But also Maths was my favourite subject I was intersted in playing games in criket and football. ",
+    description: "I completed my higher secondary education in the Science stream, where I developed a strong interest in Physics and Biology. Mathematics was also one of my favourite subjects. Beyond academics, I enjoyed playing outdoor sports, especially cricket and football, which helped me develop teamwork and sportsmanship.",
   },
 ];
 

@@ -9,6 +9,7 @@ const Header = () => {
         <p><i>Software Engineer | Full Stack Developer</i></p>
         <nav>
           <a href="#about">About</a>
+           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
            <a href="#Education">Education</a>
           <a href="#skills">Skills</a>
